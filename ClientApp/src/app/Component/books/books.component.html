@@ -1,5 +1,5 @@
 <h1>Book Summaries</h1>
-<p *ngif="!books"><b>loading...</b></p>
+ <p *ngIf="!books"><b>loading...</b></p>
 <table class="table table-striped" *ngIf="books">
     <thead>
         <tr>
@@ -14,16 +14,18 @@
         </tr>
     </thead>
     <tbody>
-            <tr *ngfor="let books of books">
+            <tr *ngFor="let book of books">
                 <td>{{book.title}}</td>
                 <td>{{book.description | slice:0:50}}...</td>
                 <td>{{book.author}}</td>
                 <td>{{book.rate}}</td>
-                <td>{{book.datestart | date: "dd/mm/yyyy"}}</td>
-                <td>{{book.dateend | date: "dd/mm/yyyy"}}</td>
-                <td>{{book.dateend ?? "Read" : book.datestart ? "In Progress" : "Not started yet"}}</td>
+                <td>{{book.dateStart | date: "dd/mm/yyyy"}}</td>
+                <td>{{book.dateEnd | date: "dd/mm/yyyy"}}</td>
+                <td>{{book.dateEnd ? "Read" : book.dateStart ? "In Progress" : "Not yet started "}}</td>
                 <td>
-                 Actions
+                 <button type="button" class="btn btn-default btn-sm" (click)="showBook(book.id)">
+                     Show
+                 </button>
                 </td>
 
             </tr>

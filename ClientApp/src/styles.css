@@ -14,3 +14,6 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+.body-wrapper{
+  padding: 0 20px 0 20px;
+}

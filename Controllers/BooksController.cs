@@ -22,7 +22,7 @@ namespace _NetCore_Angular.Controllers{
          [HttpPost("AddBook")]
          public ActionResult AddBook([FromBody] Book book){
              _bookService.AddBook(book);
-             return Ok("Added");
+             return Ok();
          }
          #endregion
          

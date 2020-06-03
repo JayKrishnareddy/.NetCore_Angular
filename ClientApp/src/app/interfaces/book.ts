@@ -4,6 +4,6 @@ interface Book{
     description:string;
     author:string;
     rate?:number;
-    datestart?: Date;
-    dateend?: Date;
+    dateStart?: Date;
+    dateEnd?: Date;
 }

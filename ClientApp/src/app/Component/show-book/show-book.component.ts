@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowBookComponent implements OnInit {
 
+    book: Book
+
   constructor() { }
 
   ngOnInit() {

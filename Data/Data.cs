@@ -15,11 +15,11 @@ namespace _NetCore_Angular.Data{
                 Author = "Jay Krishna Reddy",
                 Rate = (double)4.9,
                 DateStart = new DateTime(2020,06,01),
-                DateEnd =  null
+                DateEnd =  new DateTime(2020,01,27)
             },
             new Book(){
                 Id = 2,
-                Title = "Managing Oneself",
+                Title = "Data Layer",
                 Description = "We live in an age of unprecendented opportunity: with all in his own way",
                 Author = "Mohit Ande",
                 Rate = (double)4.9,
@@ -28,12 +28,12 @@ namespace _NetCore_Angular.Data{
             },
             new Book(){
                 Id = 3,
-                Title = "Managing Oneself",
+                Title = " Oneself",
                 Description = "We live in an age of unprecendented opportunity: with all in his own way",
                 Author = "Bobby Kalyan",
                 Rate = (double)4.9,
                 DateStart = new DateTime(2020,01,02),
-                DateEnd =  null
+                DateEnd =  new DateTime(2020,07,23)
             },
             new Book(){
                 Id = 4,
@@ -46,11 +46,11 @@ namespace _NetCore_Angular.Data{
             },
             new Book(){
                 Id = 5,
-                Title = "Managing Oneself",
+                Title = "Managing ",
                 Description = "We live in an age of unprecendented opportunity: with all in his own way",
                 Author = "Praveen Damera",
                 Rate = (double)3.8,
-                DateStart = new DateTime(2020,11,27),
+                DateStart = null,
                 DateEnd =  null
             }
         };

@@ -5,9 +5,11 @@
         <h6 class="cart-subtitle mb-2 text-muted"> by {{book.author}}</h6>
         <p>
             {{book.description}}
-        </p>>
-        <a [routerLink]="['/books']" class="card-link">Back</a>
-        <a [routerLink]="['/update-book, book.id']" class="card-link">Update</a>
+           
+        </p>
+        <a [routerLink]="['/books']" class="card-link btn btn-primary">Back</a>
+        <!-- <a [routerLink]="['/update-book/book.id']" class="card-link">Update</a> -->
+         <a class="card-link btn btn-success" (click)="updateBook(book.id)">Update</a>
     </div>
 </div>
 </div>
